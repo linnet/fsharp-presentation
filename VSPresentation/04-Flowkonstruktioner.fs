@@ -13,7 +13,7 @@ let y =
 //let day = "Monday"
 let day = "Wednesday"
 
-let startOfWeek =                       // OBS: Ikke måden at gøre dette
+let startOfWeek =                       // OBS: Ikke måden at gøre dette - se pattern matching
     if day = "Monday" then true
     elif day = "Tuesday" then true
     else false

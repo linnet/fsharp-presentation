@@ -26,7 +26,7 @@ let evenNumbers = [ for i in 1..10 do yield i * 2 ]
 let evenNumbers2 = [ for i in 1..10 -> i * 2 ]
 
 
-// Funktioner pX lister
+// Funktioner på lister
 
 // Filter
 let isEven x = x % 2 = 0
@@ -49,5 +49,4 @@ let zipped = List.zip names2 ages
 // Partition
 let isYoungPerson (name, age) = age < 40
 let (youngPeople, oldPeople) = List.partition isYoungPerson zipped
-
 
