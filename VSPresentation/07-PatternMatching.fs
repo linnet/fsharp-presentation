@@ -46,3 +46,28 @@ let a = isQuadrant1OrLowerRight (1,1)
 let b = isQuadrant1OrLowerRight (51,1)
 let c = isQuadrant1OrLowerRight (51,51)
 let d = isQuadrant1OrLowerRight (100,100)
+
+
+
+// Pattern matching pX lister
+let listLength l =
+    match l with
+    | [] -> "Empty"
+    | [_] -> "One"
+    | [_;_] -> "Two"
+    | _ -> "Many"
+
+let l1 = listLength []
+let l2 = listLength [1;5]
+let l3 = listLength [1..10]
+
+
+let rec listLength2 l =
+    match l with
+    | [] -> 0
+    | hd :: tail -> 1 + listLength2 tail
+
+let l4 = listLength2 []
+let l5 = listLength2 [1;5]
+let l6 = listLength2 [1..10]
+
