@@ -21,3 +21,12 @@ let add10 = add 10
 let result3 = add10 5
 
 
+// Rekursive funktioner
+let rec factorial x =
+    if x <= 1 then
+        1
+    else
+        x * factorial (x - 1)
+
+let result4 = factorial 5
+
