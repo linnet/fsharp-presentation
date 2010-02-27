@@ -49,7 +49,7 @@ let d = isQuadrant1OrLowerRight (100,100)
 
 
 
-// Pattern matching pX lister
+// Pattern matching på lister
 let listLength l =
     match l with
     | [] -> "Empty"

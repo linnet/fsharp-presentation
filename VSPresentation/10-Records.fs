@@ -1,6 +1,6 @@
 ﻿module Records
 
-// ErklXring af en record
+// Erklæring af en record
 type PersonRec = {
     First : string;
     Last : string;

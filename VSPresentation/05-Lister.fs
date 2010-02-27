@@ -47,6 +47,6 @@ let zipped = List.zip names2 ages
 
 
 // Partition
-let isYoungPerson (name, age) = age < 40
-let (youngPeople, oldPeople) = List.partition isYoungPerson zipped
+let isYoung (name, age) = age < 40
+let (youngPeople, oldPeople) = List.partition isYoung zipped
 

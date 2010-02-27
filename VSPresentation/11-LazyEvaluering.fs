@@ -17,7 +17,7 @@ let seqOfNumbers = seq { 1..100 }
 let isEven x = x % 2 = 0
 let isSmall x = x < 100
 
-// Listen evalueres med det samme, sekvensen fXrst nXr den bliver brugt
+// Listen evalueres med det samme, sekvensen først når den bliver brugt
 let evenNumbers = Seq.filter isEven seqOfNumbers
 let evenNumbersAsList = Seq.toList evenNumbers
 
