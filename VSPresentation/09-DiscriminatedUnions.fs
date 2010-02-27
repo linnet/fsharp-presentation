@@ -57,7 +57,3 @@ let binTree =
 
 printInOrder binTree
 
-)
-
-)
-Node(3, Empty, Empty), Node(5, Empty, Empty)
