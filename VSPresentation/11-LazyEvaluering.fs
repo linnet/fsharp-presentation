@@ -10,8 +10,8 @@ let yResult2 = y.Value
 
 
 // Sequences - svarer nogenlunde til lazy lister
-let listOfNumbers = [1..10]
-let seqOfNumbers = seq { 1..10 }
+let listOfNumbers = [1..100]
+let seqOfNumbers = seq { 1..100 }
 
 
 let isEven x = x % 2 = 0
@@ -31,3 +31,14 @@ let smallEvenNumbers =
     |> Seq.filter isSmall
     |> Seq.filter isEven
     |> Seq.toList
+
+
+let aFewNumbers =
+    seqOfAllNumbers
+    |> Seq.take 10 
+    |> Seq.toList
+
+
+// Ellers nogenlunde samme funktionalitet som List, f.eks.:
+let sum = Seq.fold (+) 0 seqOfNumbers
+
