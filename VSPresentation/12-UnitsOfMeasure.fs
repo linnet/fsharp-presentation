@@ -1,6 +1,6 @@
 ﻿module UnitsOfMeasure
 
-// SXtter en enhed pX vXrdier
+// Sætter en enhed på værdier
 [<Measure>]
 type celcius
 

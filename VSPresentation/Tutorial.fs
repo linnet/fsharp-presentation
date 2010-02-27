@@ -1,4 +1,5 @@
-﻿
+﻿module Tutorial
+
 // F# Tutorial File
 //
 // This file contains sample code to guide you through the
