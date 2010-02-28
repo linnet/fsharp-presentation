@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FSharp.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -45,9 +46,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\VSPresentation.fsproj">
-      <Project>{CF7D74F6-FB90-4246-801E-02816497D731}</Project>
-      <Name>VSPresentation</Name>
+    <ProjectReference Include="..\FSharpLibrary\FSharpLibrary.fsproj">
+      <Project>{CAAE5489-067E-43E4-9BEC-49BCD2092B2F}</Project>
+      <Name>FSharpLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

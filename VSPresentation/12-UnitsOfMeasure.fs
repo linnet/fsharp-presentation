@@ -1,5 +1,7 @@
 ﻿module UnitsOfMeasure
 
+// Units of measure er en F#-specifik feature
+
 // Sætter en enhed på værdier
 [<Measure>]
 type celcius

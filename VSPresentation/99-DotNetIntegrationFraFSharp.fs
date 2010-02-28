@@ -21,5 +21,3 @@ let Main args =
     smallNumbers
     |> Seq.iter (printfn "%d")
     0
-
-

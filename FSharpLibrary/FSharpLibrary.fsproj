@@ -2,19 +2,17 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{cf7d74f6-fb90-4246-801e-02816497d731}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>VSPresentation</RootNamespace>
-    <AssemblyName>VSPresentation</AssemblyName>
+    <ProjectGuid>{caae5489-067e-43e4-9bec-49bcd2092b2f}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>FSharpLibrary</RootNamespace>
+    <AssemblyName>FSharpLibrary</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
-    <TargetFrameworkProfile>
-    </TargetFrameworkProfile>
-    <Name>VSPresentation</Name>
+    <Name>FSharpLibrary</Name>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,18 +20,16 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
-    <PlatformTarget>x86</PlatformTarget>
-    <DocumentationFile>bin\Debug\VSPresentation.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\FSharpLibrary.XML</DocumentationFile>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <Tailcalls>true</Tailcalls>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
-    <PlatformTarget>x86</PlatformTarget>
-    <DocumentationFile>bin\Release\VSPresentation.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\FSharpLibrary.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
@@ -42,29 +38,9 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Tutorial.fs" />
-    <Compile Include="01-BasaleTyper.fs" />
-    <Compile Include="02-Tupler.fs" />
-    <Compile Include="03-Funktioner.fs" />
-    <Compile Include="04-Flowkonstruktioner.fs" />
-    <Compile Include="05-Lister.fs" />
-    <Compile Include="06-Option.fs" />
-    <Compile Include="07-PatternMatching.fs" />
-    <Compile Include="08-Funktionssammensaetning.fs" />
-    <Compile Include="09-DiscriminatedUnions.fs" />
-    <Compile Include="10-Records.fs" />
-    <Compile Include="11-LazyEvaluering.fs" />
-    <Compile Include="12-UnitsOfMeasure.fs" />
-    <Compile Include="13-Objektorientering.fs" />
-    <Compile Include="14-Kodestruktur.fs" />
-    <Compile Include="99-DotNetIntegrationFraFSharp.fs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CSharpCode\CSharpLibrary.csproj">
-      <Name>CSharpLibrary</Name>
-      <Project>{367ec8b1-c3a8-4faf-8a1f-d0bc1f6bb256}</Project>
-      <Private>True</Private>
-    </ProjectReference>
+    <Compile Include="FSharpNamespace.fs" />
+    <Compile Include="FSharpModule.fs" />
+    <None Include="Script.fsx" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\FSharp\1.0\Microsoft.FSharp.Targets" Condition="!Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" Condition=" Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
