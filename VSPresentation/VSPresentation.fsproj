@@ -57,7 +57,11 @@
     <Compile Include="12-UnitsOfMeasure.fs" />
     <Compile Include="13-Objektorientering.fs" />
     <Compile Include="14-Kodestruktur.fs" />
-    <Compile Include="99-DotNetIntegrationFraFSharp.fs" />
+    <Compile Include="15-AsyncEksempel.fs" />
+    <Compile Include="15a-ReadSyncronous.fs" />
+    <Compile Include="15b-ReadAsynchronous.fs" />
+    <Compile Include="16-DotNetIntegrationFraFSharp.fs" />
+    <Compile Include="99-Main.fs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CSharpCode\CSharpLibrary.csproj">
