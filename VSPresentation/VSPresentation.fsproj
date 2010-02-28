@@ -9,8 +9,9 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>VSPresentation</RootNamespace>
     <AssemblyName>VSPresentation</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <Name>VSPresentation</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -39,7 +40,6 @@
     <Reference Include="FSharp.Core" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Tutorial.fs" />
@@ -57,10 +57,11 @@
     <Compile Include="12-UnitsOfMeasure.fs" />
     <Compile Include="13-Objektorientering.fs" />
     <Compile Include="14-Kodestruktur.fs" />
+    <Compile Include="15-DotNetIntegrationFraFSharp.fs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CSharpCode\CSharpCode.csproj">
-      <Name>CSharpCode</Name>
+    <ProjectReference Include="..\CSharpCode\CSharpLibrary.csproj">
+      <Name>CSharpLibrary</Name>
       <Project>{367ec8b1-c3a8-4faf-8a1f-d0bc1f6bb256}</Project>
       <Private>True</Private>
     </ProjectReference>
